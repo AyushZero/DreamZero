@@ -303,9 +303,8 @@ async function loadEntries(page = 1) {
             entryList.innerHTML = `
                 <div class="col-12">
                     <div class="empty-state">
-                        <i class="fas fa-moon"></i>
                         <h4>No dream entries yet</h4>
-                        <p>Start recording your dreams to unlock insights!</p>
+                        <p>Start recording your dreams to unlock insights</p>
                     </div>
                 </div>
             `;
@@ -636,9 +635,8 @@ async function loadSummaries() {
         if (summaries.length === 0) {
             summariesList.innerHTML = `
                 <div class="empty-state">
-                    <i class="fas fa-chart-bar"></i>
                     <h4>No summaries generated yet</h4>
-                    <p>Generate weekly or monthly summaries to track your progress!</p>
+                    <p>Generate weekly or monthly summaries to track your progress</p>
                 </div>
             `;
             return;
@@ -694,8 +692,7 @@ function createSummaryCard(summary) {
                 ${summary.recommendations ? `
                     <div class="recommendations">
                         <i class="fas fa-lightbulb"></i>
-                        <strong>Recommendations:</strong><br>
-                        ${summary.recommendations}
+                        <{summary.recommendations}
                     </div>
                 ` : ''}
             </div>

@@ -16,10 +16,10 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <i class="fas fa-moon"></i> Dream Journal
+                Dream Journal
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-light btn-sm ms-2" onclick="showNewEntryModal()">
-                            <i class="fas fa-plus"></i> New Entry
+                            New Entry
                         </button>
                     </li>
                 </ul>
@@ -49,7 +49,7 @@
     <div class="container-fluid mt-4">
         <!-- Dashboard Section -->
         <div id="dashboard-section" class="content-section">
-            <h2 class="mb-4"><i class="fas fa-chart-line"></i> Dashboard</h2>
+            <h2 class="mb-4">Dashboard</h2>
             
             <!-- Overview Cards -->
             <div class="row mb-4">
@@ -138,7 +138,7 @@
         <!-- Entries Section -->
         <div id="entries-section" class="content-section" style="display: none;">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2><i class="fas fa-book"></i> Dream Entries</h2>
+                <h2>Dream Entries</h2>
                 <div>
                     <input type="text" id="search-entries" class="form-control d-inline-block w-auto" placeholder="Search entries...">
                     <select id="filter-tag" class="form-select d-inline-block w-auto ms-2">
@@ -159,7 +159,7 @@
 
         <!-- Insights Section -->
         <div id="insights-section" class="content-section" style="display: none;">
-            <h2 class="mb-4"><i class="fas fa-brain"></i> Insights & Predictions</h2>
+            <h2 class="mb-4">Insights & Predictions</h2>
             
             <div class="row mb-4">
                 <div class="col-md-6">
@@ -170,10 +170,10 @@
                         <div class="card-body">
                             <p>Generate a comprehensive summary of your dream patterns:</p>
                             <button class="btn btn-primary" onclick="generateSummary('weekly')">
-                                <i class="fas fa-calendar-week"></i> Weekly Summary
+                                Weekly Summary
                             </button>
                             <button class="btn btn-primary ms-2" onclick="generateSummary('monthly')">
-                                <i class="fas fa-calendar-alt"></i> Monthly Summary
+                                Monthly Summary
                             </button>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                         <div class="card-body">
                             <p>Export your dream journal for safekeeping:</p>
                             <button class="btn btn-success" onclick="exportPDF()">
-                                <i class="fas fa-file-pdf"></i> Export as PDF
+                                Export as PDF
                             </button>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-primary" onclick="saveEntry()">
-                        <i class="fas fa-save"></i> Save & Analyze
+                        Save & Analyze
                     </button>
                 </div>
             </div>
@@ -279,10 +279,10 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" onclick="deleteCurrentEntry()">
-                        <i class="fas fa-trash"></i> Delete
+                        Delete
                     </button>
                     <button type="button" class="btn btn-primary" onclick="editCurrentEntry()">
-                        <i class="fas fa-edit"></i> Edit
+                        Edit
                     </button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
