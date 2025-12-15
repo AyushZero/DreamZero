@@ -1,0 +1,315 @@
+/* Custom Styles for Dream Journal */
+
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --dark-color: #1f2937;
+    --light-color: #f9fafb;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand i {
+    color: #fbbf24;
+}
+
+/* Stat Cards */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.stat-card h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 600;
+}
+
+/* Dream Entry Cards */
+.dream-entry-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.dream-entry-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.dream-entry-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dream-entry-content {
+    padding: 15px;
+}
+
+.dream-entry-content p {
+    color: #666;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Emotion Badges */
+.emotion-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.emotion-joy { background-color: #fef3c7; color: #92400e; }
+.emotion-sadness { background-color: #dbeafe; color: #1e3a8a; }
+.emotion-fear { background-color: #f3e8ff; color: #581c87; }
+.emotion-anger { background-color: #fee2e2; color: #991b1b; }
+.emotion-surprise { background-color: #fce7f3; color: #831843; }
+.emotion-trust { background-color: #cffafe; color: #164e63; }
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background-color: #e0e7ff;
+    color: #3730a3;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 2px;
+}
+
+/* Sentiment Indicator */
+.sentiment-indicator {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.sentiment-positive {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.sentiment-neutral {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.sentiment-negative {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Stress Level Bar */
+.stress-bar {
+    height: 8px;
+    border-radius: 10px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.stress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.stress-low { background-color: #10b981; }
+.stress-medium { background-color: #f59e0b; }
+.stress-high { background-color: #ef4444; }
+
+/* Modal Enhancements */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Form Controls */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+
+/* Loading Spinner */
+.loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.spinner-border {
+    color: var(--primary-color);
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #9ca3af;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+/* Summary Card */
+.summary-card {
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.summary-stat {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+}
+
+.summary-stat h6 {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.summary-stat p {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Recommendations */
+.recommendations {
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.recommendations i {
+    color: #f59e0b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 15px;
+    }
+    
+    .summary-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+}
